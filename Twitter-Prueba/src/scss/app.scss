@@ -1,14 +1,173 @@
+body{
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin: 0;
+	padding: 0;
+	  .btn-primary{
+		background-color: #F58EA8;
+		color: white;
+		border: none;
+		margin-left: 16px;
+		font-family: 'Open Sans Condensed', sans-serif;
+	}
+}
+
+// Twitter Menú  //
 nav {
 	background-color: white;
 	font-size:18px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
+	box-shadow: 1px 1px 1px #999;
+	color: black;
 	ul li i {
-		color: pink;
+		color: #F58EA8;
+	}
+
+	i{
+		color: #F58EA8;
+	}
+	.icon__twitter{
+		color: #1da1f2;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.btn-primary{
-		background-color: pink;
+		background-color: #F58EA8;
 		color: white;
 		border: none;
 		margin-left: 16px;
 	}
+	.nav__search{
+		border: gray solid 1px;
+	}
+	.nav__search :hover{
+		background-color: #F7A4B9;
+	}
+}
+
+//Perfil//
+.cards {
+  margin: 50px auto;
+  padding: 0;
+  max-width: 512px;
+}
+
+
+.card__highlight {
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+
+.card--open .card__highlight {
+  height: 512px;
+}
+
+.card__content {
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  min-height: 76px;
+  position: relative;
+  transition: min-height .5s;
+}
+
+.card--open .card__content {
+  min-height: 100px;
+}
+
+.card__profile-container {
+  left: 20px;
+  opacity: 0;
+  position: absolute;
+  top: -125px;
+  transition: all .25s ease-in-out;
+  width: 120px;
+}
+
+.card--open .card__profile-container {
+  opacity: 1;
+  top: -85px;
+}
+
+.card__profile {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  transition: all .25s ease-in;
+  width: 100%;
+}
+
+.card__img {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 1.1rem;
+  padding: 0 2%;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  transition: all .25s ease-in;
+  top: 0;
+  width: 350px;
+}
+
+.card--open .card__title {
+  clear: both;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,.75);
+  top: -60px;
+}
+
+.card__author {
+  opacity: 0;
+  padding: 0 2%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .25s;
+  width: 350px;
+}
+
+.card--open .card__author {
+  opacity: 1;
+}
+
+.card__author-name {
+  font-weight: 200;
+  text-align: right;
+}
+
+.card__like {
+  color: #ccc;
+  display: block;
+  padding: 28px 0 0 20px;
+  text-align: center;
+  transition: all .35s ease-out;
+  width: 120px;
+}
+
+.card--open .card__like {
+  padding-top: 55px;
+}
+
+.card__like--red {
+  color: tomato;
+}
+
+.card__hidden {
+  height: 0;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.card--open .card__hidden {
+  height: 250px;
+}
+
+.create {
+  margin: 50px auto;
+  max-width: 512px;
+
 }
