@@ -10,102 +10,88 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
 
 </head>
-<body>
+<body>	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">Navbar</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Link</a>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Dropdown
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Action</a>
-	          <a class="dropdown-item" href="#">Another action</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Something else here</a>
-	        </div>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Disabled</a>
-	      </li>
-	    </ul>
-	    <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	    </form>
-	  </div>
+		<div class="container">  	
+		  <a class="navbar-brand" href="#"><i class="fas fa-home"></i> Inicio</a>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#"><i class="fas fa-bell"></i> Notificaciones <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#"><i class="far fa-envelope"></i> Mensajes</a>
+		      </li>
+		    </ul>
+		    <i class="fab fa-twitter"></i>
+		    <form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i> Buscar</button>
+		    </form>
+			<button type="button" class="btn btn-primary">Twittear</button>
+		  </div>
+		</div>  
 	</nav>
-	<div class="page-container">
-		<p>Holi</p>
+	<div class="row">
+		<div class="container">  	
+			<section class="create">
+			    <h2 class="create__title">Crea un landscape</h2>
+
+			    <form action="#" class="create__form" autocomplete="off">
+			      <label for="name" class="create__label">
+			        <input type="text" name="name" class="create__input" id="name" required>
+			        <span class="create__placeholder">Título</span>
+			      </label>
+
+			      <div class="create__display_images">
+			        <div class="create__image"><img src="assets/images/squared/uk.png" class="create__img"></div>
+			        <div class="create__profile"><img src="assets/images/profiles/uk.png" class="create__img"></div>
+			        <label for="image" class="create__label--select">
+			          <select name="image" id="image" class="create__select">
+			            <option value="uk.png">Seleccione una Imagen</option>
+			            <option value="01.jpg">imagen 01</option>
+			            <option value="02.jpg">imagen 02</option>
+			            <option value="03.jpg">imagen 03</option>
+			            <option value="04.jpg">imagen 04</option>
+			            <option value="05.jpg">imagen 05</option>
+			            <option value="06.jpg">imagen 06</option>
+			            <option value="07.jpg">imagen 07</option>
+			          </select>
+			        </label>
+			        <label for="author" class="create__label--select">
+			          <select name="author" id="author" class="create__select">
+			            <option value="uk.png">Seleccione un Autor</option>
+			            <option value="she.jpg">Margot Robbie</option>
+			            <option value="he.jpg">Ryan Reynolds</option>
+			            <option value="mr.jpg">Barack Obama</option>
+			            <option value="fl.jpg">Florcita Motuda</option>
+			          </select>
+			        </label>
+
+			      </div>
+
+			      <label for="followers" class="create__label">
+			        <input type="text" name="followers" class="create__input" id="followers" required>
+			        <span class="create__placeholder">Followers</span>
+			      </label>
+
+			      <label for="likes" class="create__label">
+			        <input type="text" name="likes" class="create__input" id="likes" required>
+			        <span class="create__placeholder">Likes</span>
+			      </label>
+
+			      <label for="following" class="create__label">
+			        <input type="text" name="following" class="create__input" id="following" required>
+			        <span class="create__placeholder">Following</span>
+			      </label>
+				<button type="submit" value="Agregar">
+					<i class="fas fa-feather-alt"></i>
+			    </button>  
+			    </form>
+		  	</section>
+		</div>
 	</div>
-	  <section class="create">
-    <h2 class="create__title">Crea un landscape</h2>
 
-    <form action="#" class="create__form" autocomplete="off">
-      <label for="name" class="create__label">
-        <input type="text" name="name" class="create__input" id="name" required>
-        <span class="create__placeholder">Título</span>
-      </label>
-
-      <div class="create__display_images">
-        <div class="create__image"><img src="assets/images/squared/uk.png" class="create__img"></div>
-        <div class="create__profile"><img src="assets/images/profiles/uk.png" class="create__img"></div>
-
-        <label for="image" class="create__label--select">
-          <select name="image" id="image" class="create__select">
-            <option value="uk.png">Seleccione una Imagen</option>
-            <option value="01.jpg">imagen 01</option>
-            <option value="02.jpg">imagen 02</option>
-            <option value="03.jpg">imagen 03</option>
-            <option value="04.jpg">imagen 04</option>
-            <option value="05.jpg">imagen 05</option>
-            <option value="06.jpg">imagen 06</option>
-            <option value="07.jpg">imagen 07</option>
-          </select>
-        </label>
-
-        <label for="author" class="create__label--select">
-          <select name="author" id="author" class="create__select">
-            <option value="uk.png">Seleccione un Autor</option>
-            <option value="she.jpg">Margot Robbie</option>
-            <option value="he.jpg">Ryan Reynolds</option>
-            <option value="mr.jpg">Barack Obama</option>
-            <option value="fl.jpg">Florcita Motuda</option>
-          </select>
-        </label>
-
-      </div>
-
-      <label for="followers" class="create__label">
-        <input type="text" name="followers" class="create__input" id="followers" required>
-        <span class="create__placeholder">Followers</span>
-      </label>
-
-      <label for="likes" class="create__label">
-        <input type="text" name="likes" class="create__input" id="likes" required>
-        <span class="create__placeholder">Likes</span>
-      </label>
-
-      <label for="following" class="create__label">
-        <input type="text" name="following" class="create__input" id="following" required>
-        <span class="create__placeholder">Following</span>
-      </label>
-
-      <input type="submit" value="Agregar" class="create__submit">
-    </form>
-  </section>
-  	<script type="text/javascript" src="assets/js/lib/jquery-3.3.1.min.js"></script>
-  	<script type="text/javascript" src="assets/js/script.js"></script>			
+  	<script type="text/javascript" src="js/app.js"></script>			
 </body>
 </html>

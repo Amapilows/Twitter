@@ -1,3 +1,14 @@
-body{
-	background: yellow;
+nav {
+	background-color: white;
+	font-size:18px;
+	font-family: 'Roboto', sans-serif;
+	ul li i {
+		color: pink;
+	}
+	.btn-primary{
+		background-color: pink;
+		color: white;
+		border: none;
+		margin-left: 16px;
+	}
 }
