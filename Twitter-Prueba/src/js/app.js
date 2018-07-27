@@ -10,6 +10,10 @@ $('document').ready(function(){
 		$(".new__post").prepend(
 			'<div class="new__twitter container">'
 			+ '<div class="new__twitter--white">'
+			+ '<span id=#trash">'
+			+ '</span>'
+			+ '<span class="post__like">'
+			+ '</span>'
 			+ '<img src="../src/img/profiles/" class="create__img">'
 			+ img
 			+ '<i class="fas fa-trash-alt button__delete">'
@@ -41,9 +45,10 @@ $('document').ready(function(){
 	$(".post__like").on('click', function(){
 		counter = $("#counter").text();
 		counter =parseInt(counter);
-		console.log(counter + 1);
-		$('#counter').text(counter + 1);
+		$(this).find('.post__like');
 	})
+
+
 
 	
 	
