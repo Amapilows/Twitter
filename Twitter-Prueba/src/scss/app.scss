@@ -1,17 +1,11 @@
 body{
 	font-family: 'Open Sans Condensed', sans-serif;
-	margin: 0;
-	padding: 0;
-	  .btn-primary{
-		background-color: #F58EA8;
-		color: white;
-		border: none;
-		margin-left: 16px;
-		font-family: 'Open Sans Condensed', sans-serif;
-	}
+	color: #14171a;
+ 	font-size: 14px;
+ 	line-height: 20px;
 }
 
-// Twitter Menú  //
+//  Menú  //
 nav {
 	background-color: white;
 	font-size:18px;
@@ -45,6 +39,39 @@ nav {
 }
 
 //Perfil//
+
+.container{
+	margin-top: 2rem;
+	aling-item: center;
+}
+
+.new__twitter{
+	background-color: #FFEDFE;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	margin: 20px;
+	padding: 10px 12px;
+	float: right;
+
+}
+
+.new__twitter--white{
+	background-color: white;
+	widht: 90%;
+	height: 250px;
+	
+}
+
+.button__delete{
+	color: #B5B4B5;
+	float: right;
+	margin: 5px;
+	border-radius: 20px;
+}
+
+
 .cards {
   margin: 50px auto;
   padding: 0;
@@ -153,7 +180,7 @@ nav {
 }
 
 .card__like--red {
-  color: tomato;
+  color: red;
 }
 
 .card__hidden {
@@ -169,5 +196,21 @@ nav {
 .create {
   margin: 50px auto;
   max-width: 512px;
+  img{
+  	height: 250px;
+  	widht: auto;
+  }
+}
+.create__textarea{
+	widht: 100%;
+	border: solid 1px gray;
+	border-radius: 5px;
+}
 
+section form{
+	text-aling: center;
+}
+
+.create__profile{
+    margin-bottom: 12px;
 }

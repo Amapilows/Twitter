@@ -25,99 +25,59 @@
 		    </ul>
 		    <i class="fab fa-twitter icon__twitter"></i>
 		    <form class="form-inline my-2 my-lg-0">
-		      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-		      <button class="btn btn-outline-success my-2 my-sm-0nav__search " type="submit"><i class="fas fa-search"></i> Buscar</button>
+		      <input class="form-control mr-sm-2" type="search" placeholder="Buscar en Twitter" aria-label="Search">
+		      <button class="btn btn-outline-success my-2 my-sm-0nav__search " type="submit"><i class="fas fa-search"></i></button>
 		    </form>
 			<button type="button" class="btn btn-primary">Twittear</button>
 		  </div>
 		</div>  
 	</nav>
-	<div class="row">
-		<div class="col-md-6">
-			<div class="container">  	
-				<section class="create">
-				    <form action="#" class="create__form" autocomplete="off">
-				      <label for="name" class="create__label">
-				        <input type="text" name="name" class="create__input" id="name" required>
-				        <span class="create__placeholder">Título</span>
-				      </label>
 
-				      <div class="create__display_images">
-				        <div class="create__image"><img src="assets/images/squared/uk.png" class="create__img"></div>
-				        <div class="create__profile"><img src="assets/images/profiles/uk.png" class="create__img"></div>
-				        <label for="image" class="create__label--select">
-				          <select name="image" id="image" class="create__select">
-				            <option value="uk.png">Seleccione una Imagen</option>
-				            <option value="01.jpg">imagen 01</option>
-				            <option value="02.jpg">imagen 02</option>
-				            <option value="03.jpg">imagen 03</option>
-				            <option value="04.jpg">imagen 04</option>
-				            <option value="05.jpg">imagen 05</option>
-				            <option value="06.jpg">imagen 06</option>
-				            <option value="07.jpg">imagen 07</option>
-				          </select>
-				        </label>
-				      </div>
-
-				      <label for="followers" class="create__label">
-				        <input type="text" name="followers" class="create__input" id="followers" required>
-				        <span class="create__placeholder">Followers</span>
-				      </label>
-
-				      <label for="likes" class="create__label">
-				        <input type="text" name="likes" class="create__input" id="likes" required>
-				        <span class="create__placeholder">Likes</span>
-				      </label>
-					<button class="btn btn-primary">
-						<i class="fas fa-feather-alt"> Twittear </i>
-				    </button>  
-				    </form>
-			  	</section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+			  <section class="create">
+			    <h2 class="create__title">¡Grítale al mundo tu sabiduría!</h2>
+			      <div class="create__display_images">
+			        <div class="create__profile"><img src="../src/img/profiles/uk.png" class="create__img"></div>
+			        <label for="author" class="create__label--select">
+			          <select name="author" id="author" class="create__select">
+			            <option value="uk.png">Selecciona una Foto de Perfil</option>
+			            <option value="she.jpg">Felipito</option>
+			            <option value="he.jpg">Felipito Pelotón</option>
+			            <option value="mr.jpg">Patito</option>
+			            <option value="fl.jpg">Florcita Motuda</option>
+			          </select>
+			        </label>
+			      </div>
+					<form id="push__Tweet" >
+						<textarea name="" id="myTweet" cols="30" rows="10"></textarea>
+						<input type="submit" name="" value="Twittear" maxlength="144" >					
+					</form>
+			  </section>				
 			</div>
-		</div>
-	</div>
-	<div class="row">	
-		<div class="col-md-6">
-			<li class="card card--open">
-		      <div class="card__highlight">
-		        <img class="card__img" src="./assets/images/squared/05.jpg" alt="">
-		      </div>
-		      <div class="card__content">
-		        <div class="card__profile-container">
-		          <img class="card__profile" src="./assets/images/profiles/mr.jpg" alt="">
-		        </div>
-		        <div class="card__title">
-		          <h2>Laguna de Aculeo, Paine</h2>
-		        </div>
-		        <div class="card__author">
-		          <h3 class="card__author-name">Barack Obama</h3>
-		        </div>
-		        <a class="card__like" href="#">
-		          <i class="fas fa-heart"></i>
-		        </a>
-		        <div class="card__hidden">
-		          <ul class="social">
-		            <li class="social__element">
-		              <div class="social__number">10,4K</div>
-		              <div class="social__text">Followers</div>
-		            </li>
-		            <li class="social__element">
-		              <div class="social__number">1524</div>
-		              <div class="social__text">Likes</div>
-		            </li>
-		            <li class="social__element">
-		              <div class="social__number">215</div>
-		              <div class="social__text">Following</div>
-		            </li>
-		          </ul>
-		          <div class="card__follow">
-		            <button>Seguir</button>
-		          </div>
-		        </div>
-		      </div>
-		    </li>
-		</div>
+
+			<div class="col-md-6">
+				<div class="new__post">
+					<div class="new__twitter container">
+						<div class="new__twitter--white">
+							<img src="../src/img/profiles/she.jpg">
+							<a href="#" classs="button__delete"> 
+								<i class="fas fa-trash-alt" ></i>
+							</a>	
+							<a href="#" class="card__like">
+								<i class="fas fa-heart card__like--red"></i>
+							</a>		
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>	
 	</div>		
+
+
+
+
 
   	<script type="text/javascript" src="js/app.js"></script>			
 </body>
