@@ -14,7 +14,7 @@ $('document').ready(function(){
 			+ '</span>'
 			+ '<span class="post__like">'
 			+ '</span>'
-			+ '<img src="../src/img/profiles/" class="create__img">'
+			+ '<img src="../img/profiles/" class="create__img">'
 			+ img
 			+ '<i class="fas fa-trash-alt button__delete">'
 			+ '<i class="fas fa-heart card__like" id="counter"></i>'
@@ -42,10 +42,12 @@ $('document').ready(function(){
 	$(".create__profile img").attr("src", "../src/img/profiles/" + $(this).val());
 	});
 
-	$(".post__like").on('click', function(){
-		counter = $("#counter").text();
+	$('.post__like').click('click','.card__like',  function(){
+
+		counter = $(".card__like").text();
 		counter =parseInt(counter);
-		$(this).find('.post__like');
+		counter =counter+1;
+		$(this).html('<i>'+ counter +'</i>');
 	})
 
 
